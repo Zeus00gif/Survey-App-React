@@ -1,0 +1,176 @@
+.link {
+  text-decoration: none;
+  color: #fff;
+}
+.link:hover {
+  text-decoration: none;
+  color: #fff;
+}
+.surveybtn {
+    width: 20%;
+  box-shadow: 2px 2px 4px #444;
+  color: #333;
+}
+.createSurveyHeading {
+  text-shadow: 2px 2px 4px #000;
+  color: #ffc107;
+}
+.typeSelected {
+  /* border: 4px solid #17a2b8; */
+  border: 4px solid #6c757d;
+  width: 40%;
+  color: #343a40;
+  text-align: center;
+  font-size: 18px;
+}
+.SelAnotherType {
+  width: 40%;
+}
+.questionInput {
+  width: 45%;
+  border: 2px solid #343a40;
+}
+.optionsInput {
+  width: 35%;
+  border: 2px solid #6c757d;
+}
+.addOptionButton {
+  width: 5%;
+  text-align: center;
+  background-color: #28a745;
+  color: #000;
+  border-color: #343a40;
+}
+.removeOptionButton {
+  width: 5%;
+  text-align: center;
+  background-color: #dc3545;
+  color: #000;
+  border-color: #343a40;
+}
+.addOptionButton:disabled {
+  background-color: #aaa;
+  color: #fff;
+}
+.removeOptionButton:disabled {
+  background-color: #ccc;
+  color: #fff;
+}
+.addNotDisabled:hover {
+  background-color: #0e7726;
+}
+.removeNotDisabled:hover {
+  background-color: #b31f2e;
+}
+.addBtn {
+  color: #98bdce;
+  box-shadow: 2px 2px 2px #666;
+}
+.publishBtn {
+  color: #ffc107;
+  box-shadow: 2px 2px 2px #666;
+}
+/* .publishQuestion{
+    width: 40%;    
+} */
+.indent {
+  text-indent: 1%;
+}
+.publishInput {
+  width: 35%;
+  transition: 0.1s ease-in-out;
+}
+.publishInput:hover {
+  background-color: #ddd;
+}
+.Ovalue {
+  color: #6c757d;
+}
+.inputCheck:checked + span {
+  color: #000;
+}
+.confirmBtn {
+  color: #ffc107;
+}
+.titleinput::placeholder{
+  color: #fff;
+  opacity: 1;
+}
+.hideunhidebtn{
+  box-shadow: 2px 2px 4px  #000;
+  transition: 0.3s ease-in-out;
+}
+.submitbtn{
+  box-shadow: 2px 2px 2px  #666;
+  width: 25%;
+}
+.homebtn{
+  width: 25%;
+}
+@media(max-width:992px){
+  .surveybtn{
+    width: 40%;
+  }
+}
+@media(max-width:771px){
+  .homebtn{
+    width: 50%;
+  }
+  .surveybtn{
+    width: 50%;
+  }
+  .typeSelected{
+    width: 100%;
+  }
+  .SelAnotherType{
+    width: 100%;
+  }
+  .questionInput{
+    width: 90%;
+  }
+  .optionsInput{
+    width: 70%;
+  }
+  .addOptionButton{
+    width: 10%;
+  }
+  .removeOptionButton{
+    width: 10%;
+  }
+}
+@media(max-width: 500px){
+  .titletaken{
+    display: block;
+    width: 50%;
+  }
+  .homebtn{
+    width: 50%;
+  }
+  .surveybtn{
+    width: 90%;
+  }
+  .submitbtn{
+    width: 80%;
+  }
+  .publishInput{
+    width: 80%;
+  }
+  .typeSelected{
+    width: 100%;
+  }
+  .SelAnotherType{
+    width: 100%;
+  }
+  .questionInput{
+    width: 100%;
+  }
+  .optionsInput{
+    width: 70%;
+  }
+  .addOptionButton{
+    width: 15%;
+  }
+  .removeOptionButton{
+    width: 15%;
+  }
+}

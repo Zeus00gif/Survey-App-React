@@ -1,0 +1,34 @@
+{
+  
+  "name": "tiger-survey-app",
+  "version": "1.0.0",
+  "description": "a tiger survey app",
+  "main": "server.js",
+  "proxy": "https://mysterious-refuge-16165.herokuapp.com/",
+  "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "client-install": "npm install --prefix client",
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.11.15",
+    "nodemon": "^2.0.7"
+  },
+  "engines": {
+    "node": "12.19.0",
+    "npm": "7.5.4"
+  },
+  "devDependencies": {
+    "gh-pages": "^3.1.0"
+  }
+}
